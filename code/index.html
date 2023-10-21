@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Your Local Librarian</title>
+</head>
+
+<body>
+  <h1> ++ The <i>Secret</i> Book Club ++</h1>
+
+
+
+  <!-- Sort filter div here -->
+  <div class="sort-filter">
+
+    <label for="genreFilter">Filter by Genre:</label>
+    <select id="genreFilter">
+      <option value="all">All</option>
+      <option value="Fiction">Fiction</option>
+      <option value="Science Fiction">Science Fiction</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Horror">Horror</option>
+      <option value="Mystery">Mystery</option>
+      <option value="Dystopian">Dystopian</option>
+    </select>
+
+    <label for="dateSort">Sort by Date:</label>
+    <select id="dateSort">
+      <option value="newest">Newest</option>
+      <option value="oldest">Oldest</option>
+    </select>
+
+    <label for="alphaSort">Sort alphabetically</label>
+    <select id="alphaSort">
+      <option value="a-z">A-Z</option>
+      <option value="z-a">Z-A</option>
+    </select>
+
+  </div>
+
+  <div class="grid">
+    <!-- The books will be appended here -->
+  </div>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

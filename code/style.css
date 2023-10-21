@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #5F545B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h1 {
+    margin: 50px 40px;
+    color: yellow;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns, equivalent to  1fr 1fr 1fr, but more concise */
+    grid-gap: 50px 30px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px;
+
+}
+
+.cell {
+    overflow: hidden;
+    /* This ensures that content doesn't overflow the cell */
+
+}
+
+.cell img {
+    width: 100%;
+    /* This makes sure my image fits the entire cell */
+    height: 100%;
+    display: block;
+    /* This removes any default margins/paddings */
+    margin: 0 auto;
+    /* This centres the image if it's narrower than the cell */
+    object-fit: cover;
+    /* This ensures the image covers the full dimensions of the cell without stretching */
+    object-position: center;
+    /* This once again, centres the image within the cell */
+}
+
+p {
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-bottom: 20px;
+
+}
+
+.sort-filter {
+    margin-bottom: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.sort-filter label,
+.sort-filter select,
+.sort-filter button {
+    margin-right: 10px;
+    font-size: 1em;
+}
